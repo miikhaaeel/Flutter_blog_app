@@ -12,6 +12,8 @@ class PostDetailsPage extends StatefulWidget {
 class _PostDetailsPageState extends State<PostDetailsPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.green,);
+    return Scaffold(
+      backgroundColor: Colors.green,
+    );
   }
 }
