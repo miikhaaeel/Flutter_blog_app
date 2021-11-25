@@ -11,9 +11,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  StreamSubscription<QuerySnapshot>? subscription;
+   StreamSubscription<QuerySnapshot>? subscription;
 
-  List<DocumentSnapshot>? snapshot;
+   List<DocumentSnapshot>? snapshot;
 
   CollectionReference collectionReference =
       FirebaseFirestore.instance.collection('Post');
@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
               // height: 50,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: [ 
                   CircleAvatar(
                     child: Text(
                       snapshot![index].get('title')[0],
